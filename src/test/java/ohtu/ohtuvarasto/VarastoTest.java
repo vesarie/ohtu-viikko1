@@ -41,7 +41,7 @@ public class VarastoTest {
 
     @Test
     public void lisaysLisaaSaldoa() {
-        //varasto.lisaaVarastoon(8);
+        varasto.lisaaVarastoon(8);
         assertEquals(8, varasto.getSaldo(), eps);
     }
 
