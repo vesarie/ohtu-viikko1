@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 public class VarastoTest {
 
     Varasto varasto;
-    double eps = 0.0001;
+    final double eps = 0.0001;
 
     @Before
     public void setUp() {
@@ -41,7 +41,7 @@ public class VarastoTest {
 
     @Test
     public void lisaysLisaaSaldoa() {
-        varasto.lisaaVarastoon(8);
+        //varasto.lisaaVarastoon(8);
         assertEquals(8, varasto.getSaldo(), eps);
     }
 
