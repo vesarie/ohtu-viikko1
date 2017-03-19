@@ -15,6 +15,10 @@ apply plugin: 'application'
 // Java code coverage with the JaCoCo library
 apply plugin: 'jacoco'
 
+plugins {
+    id 'com.github.kt3k.coveralls' version '2.8.1'
+}
+
 // In this section you declare where to find the dependencies of your project
 repositories {
     // Use jcenter for resolving your dependencies.
@@ -36,6 +40,13 @@ mainClassName = 'ohtu.ohtuvarasto.Main'
 jar {
     manifest {
         attributes 'Main-Class': 'ohtu.ohtuvarasto.Main'
+    }
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled = true // coveralls plugin depends on xml format report
+        html.enabled = true
     }
 }
 
