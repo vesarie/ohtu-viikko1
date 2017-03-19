@@ -58,7 +58,6 @@ public class SudokuMain {
     }
 
     private static void play(String name, Board board) {
-        //System.out.println("Sudoku: " + name);
         System.out.println(writer.write(board));
 
         Solver solver = new Solver();

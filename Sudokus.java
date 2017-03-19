@@ -24,6 +24,9 @@ public class Sudokus {
         "984761235",
         "521839764"};
 
+    /**
+     * Note: 'tough' has multiple solutions, and the number is very high (>40 000)
+     */
     public static final String[] tough = new String[]{
         "         ",
         "     3 85",
