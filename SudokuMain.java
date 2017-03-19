@@ -8,6 +8,8 @@ import java.util.TreeMap;
 
 public class SudokuMain {
 
+    public static final boolean USE_FAST_BOARD = true;
+
     private static Scanner input;
     private static BoardWriter writer;
     private static TreeMap<String, Board> sudokus;
@@ -23,6 +25,10 @@ public class SudokuMain {
             System.out.println("Sudoku not found");
             printNames();
             return;
+        }
+
+        if (USE_FAST_BOARD) {
+            board = new FastBoard(board);
         }
 
         play(name, board);

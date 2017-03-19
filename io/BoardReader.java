@@ -39,7 +39,7 @@ public class BoardReader {
 
     private int toInteger(char c) throws BoardReaderException {
         try {
-            int value = Character.digit(c, 10);
+            int value = Integer.parseInt(c + "");
             if (value < 1 || value > 9) {
                 throw new BoardReaderException("Illegal value: " + value);
             }
