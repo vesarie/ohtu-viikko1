@@ -19,6 +19,11 @@ apply plugin: 'application'
 // Java code coverage with the JaCoCo library
 apply plugin: 'jacoco'
 
+
+// VIIKON 3 TEHTÄVÄ 2: CHECKSTYLE
+apply plugin: 'checkstyle'
+
+
 // In this section you declare where to find the dependencies of your project
 repositories {
     // Use jcenter for resolving your dependencies.
